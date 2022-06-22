@@ -1,0 +1,111 @@
+body {
+  background: #998291;
+  font-family:  'Lato', sans-serif;
+}
+.app-content {
+  max-width: 600px;
+  min-width: 250px;
+  background: white;
+  border-radius: 14px;
+  margin: 16px auto;
+  display: block;
+  padding: 24px;
+}
+
+.search-button {
+  width: 100%;
+  color: white;
+  background: #913e9c;
+  font-weight: bold;
+  border: 2px solid #724266;
+}
+
+.search-button:hover {
+  color: #631881;
+  background: #d5eeff;
+}
+
+.current-button {
+  width: 100%;
+  font-weight: bold;
+  border: 1px solid #18a5c9;
+  color: #343534;
+  background: #d5faff;
+}
+
+.current-button:hover {
+  color: #631881;
+  background: #d5eeff;
+}
+
+.current {
+  background-color: rgb(244, 232, 247);
+  margin: 16px 0 24px;
+  text-align: center;
+  border-radius: 13px;
+  border: 1px solid #debfdf;
+}
+
+.current-text {
+  font-size: 36px;
+  text-align: left;
+ }
+
+.current-text h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.degrees {
+  vertical-align: super;
+  font-size: 14px;
+}
+
+.degrees a {
+  text-decoration: none;
+  color: #6e0089;
+}
+
+.degrees a:hover {
+  color: #9e1ac6;
+}
+
+.degrees a:active {
+  color: #b21ac6;
+  font-size: larger;
+}
+
+.current-icon {
+  font-size: 90px;
+  color: #9b4eb9;
+}
+
+.week {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.week-icon {
+  font-size: 24px;
+  margin: 0px auto 5px;
+  color: #ac96e7;
+}
+
+#current-date {
+  font-size: 15px;
+  margin-bottom: 18px;
+}
+
+#weather {
+  font-size: 14px;
+  list-style: none;
+  padding: 5px 0 0;
+  color: #343235;
+  }
+
+#sky {
+  color: rgb(49, 48, 48);;
+  font-weight: bold;
+  text-transform: capitalize;
+}
