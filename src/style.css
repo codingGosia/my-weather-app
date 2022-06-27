@@ -56,6 +56,13 @@ body {
   font-weight: bold;
   margin-bottom: 0;
 }
+#weather-description {
+  font-style: italic;
+}
+
+#weather-description::first-letter{
+  text-transform: capitalize;
+}
 
 .degrees {
   vertical-align: super;
@@ -109,8 +116,11 @@ body {
   font-weight: bold;
   text-transform: capitalize;
 }
-footer {
-  color: #ffffff; 
-  height:20px; 
-  text-align:center; 
+.footer {
+  text-align: center;
+  padding-top: 1px;
+  font-size: 24px;
+}
+.footer a {
+  color: #fff;
 }

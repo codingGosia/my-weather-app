@@ -7,15 +7,13 @@
     <title>Weather</title>
     <script
       src="https://kit.fontawesome.com/51ad86c1e2.js"
-      crossorigin="anonymous"
-    ></script>
-    
+      crossorigin="anonymous"></script>
+   
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-      crossorigin="anonymous"
-    />
+      crossorigin="anonymous"/>
     <link rel="stylesheet" href="src/style.css" />
     
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
@@ -23,19 +21,18 @@
   <body>
     <div class="container">
       <div class="app-content">
+        
         <form>
           <div class="row">
-            <div class="col-sm">
-              <div class="mb-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="new-city"
-                  placeholder="Enter a city"
-                  autofocus="on"
-                  autocomplete="off"
-                />
-              </div>
+            <div class="col-sm mb-2">
+              <input
+                type="text"
+                class="form-control"
+                id="new-city"
+                placeholder="Enter a city..."
+                autofocus="on"
+                autocomplete="off"
+              />
             </div>
             <div class="col-sm-6">
               <div class="row">
@@ -52,9 +49,8 @@
                   <button
                     type="submit"
                     id="current-button"
-                    class="btn btn-primary current-button"
-                  >
-                    Current
+                    class="btn btn-primary search-button">
+                    Your city
                   </button>
                 </div>
               </div>
@@ -64,89 +60,38 @@
 
         <div class="current">
           <div class="row">
-            <div class="col" id="current-date">Current date</div>
+            <div class="col" id="current-date"></div>
           </div>
 
           <div class="row d-flex align-items-center">
             <div class="col-sm-1"></div>
             <div class="col-1"></div>
-
-            <div class="col-6 current-text">
+            
+            <div class="col-6 p-0 current-text">
               <h1 id="current-city">Loading</h1>
-              <span id="cur-temp"></span>
+              <span id="current-temperature"></span>
               <span class="degrees">
                 <a href="#" id="temp-c">°C</a> |
                 <a href="#" id="temp-f">°F</a>
               </span>
+
               <ul id="weather">
-                <li id="sky"></li>
+                <li id="weather-description"></li>
                 <li id="humidity"></li>
                 <li id="wind"></li>
               </ul>
             </div>
-
-            <div class="col current-icon">
-              <i class="fa-solid fa-sun"></i>
-            </div>
+            <div class="col p-0 current-icon" id="current-icon"></div>
             <div class="col-sm"></div>
           </div>
         </div>
-
-        <div class="week">
-          <div class="row">
-            <div class="col">
-              <h6>Mon</h6>
-              <i class="fa-solid fa-sun week-icon"></i>
-              <br />
-              19°C
-              <br />
-              27°C
-            </div>
-
-            <div class="col">
-              <h6>Tue</h6>
-              <i class="fa-solid fa-cloud-showers-heavy week-icon"></i>
-              <br />
-              15°C
-              <br />
-              18°C
-            </div>
-
-            <div class="col">
-              <h6>Wed</h6>
-              <i class="fa-solid fa-cloud week-icon"></i>
-              <br />
-              11°C
-              <br />
-              22°C
-            </div>
-
-            <div class="col">
-              <h6>Thu</h6>
-              <i class="fa-solid fa-cloud-showers-heavy week-icon"></i>
-              <br />
-              15°C
-              <br />
-              20°C
-            </div>
-
-            <div class="col">
-              <h6>Fri</h6>
-              <i class="fa-solid fa-cloud-sun week-icon"></i>
-              <br />
-              16°C
-              <br />
-              21°C
-            </div>
-          </div>
-        </div>
+        <div class="week" id="forecast"></div>
       </div>
-    </div>
-    <footer>
       <div class="footer">
-        <a href="https://github.com/codingGosia">GitHub</a>
-      </div>
-    </footer>
+        <a href="https://github.com/codingGosia" target="_blank">GitHub</a>
+        </div>
+    </div>
+
     <script src="src/index.js"></script>
   </body>
 </html>
